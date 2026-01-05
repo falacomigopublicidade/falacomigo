@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fala Comigo - Aplicativo Oficial</title>
+    <meta name="description" content="Site oficial do aplicativo Fala Comigo. Comunicação simples, acessível e segura.">
+    
+    <style>
+        /* Reset e Estilos Gerais */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #f9f9f9; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style-position: inside; }
+        
+        /* Cores */
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #0056b3;
+            --text-dark: #2c3e50;
+            --light-bg: #ffffff;
+            --section-bg: #e9ecef;
+			--primary-orange: #FF7A00;
+        }
+
+        /* Header */
+        header { background: var(--light-bg); padding: 20px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary-color); }
+        .nav-links a { margin-left: 20px; font-size: 0.9rem; color: var(--text-dark); }
+        .nav-links a:hover { color: var(--primary-color); }
+
+        /* Hero Section */
+        .hero { background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; padding: 80px 0; text-align: center; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 15px; }
+        .hero p.slogan { font-size: 1.2rem; font-weight: 300; margin-bottom: 30px; }
+        .hero-desc { max-width: 700px; margin: 0 auto; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px; }
+
+        /* Seções Gerais */
+        section { padding: 60px 0; border-bottom: 1px solid #eee; }
+        h2 { color: var(--text-dark); margin-bottom: 20px; text-align: center; }
+        .content-box { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+
+        /* Sobre */
+        .features-list { margin-top: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .feature-item { padding: 15px; border: 1px solid #eee; border-radius: 5px; }
+
+        /* Contato e Legal */
+        .contact-highlight { 
+            background-color: #fffaf5; /* Fundo levemente alaranjado */
+            border-top: 4px solid var(--primary-orange);
+        }
+        .contact-highlight h2 {
+            color: var(--primary-orange);
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .contact-box {
+            background: #fff;
+            border: 1px solid #ffe0cc;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(255, 127, 39, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .icon-orange {
+            font-size: 3rem;
+            color: var(--primary-orange);
+            margin-bottom: 15px;
+            display: block;
+        }
+        .btn-contact {
+            display: inline-block;
+            background-color: #007BFF;
+            color: #fff; 
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(230, 81, 0, 0.2);
+        }
+        .btn-contact:hover {
+            background-color: #FF4500;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+        .contact-text strong { color: var(--primary-orange); }
+
+
+        /* Política de Privacidade */
+        .privacy-content h3 { margin-top: 20px; margin-bottom: 10px; font-size: 1.1rem; color: var(--secondary-color); }
+        .privacy-content p, .privacy-content ul { margin-bottom: 15px; text-align: left; }
+        .privacy-content { max-height: 500px; overflow-y: auto; padding-right: 10px; border: 1px solid #ddd; }
+
+        /* Footer */
+        footer { background: var(--text-dark); color: white; text-align: center; padding: 20px 0; font-size: 0.8rem; }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            nav { flex-direction: column; gap: 10px; }
+            .nav-links a { margin: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegação -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Fala Comigo</div>
+                <div class="nav-links">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#contato">Contato</a>
+                    <a href="#privacidade">Privacidade</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Fala Comigo</h1>
+            <p class="slogan">Conectando você ao que importa, de forma simples e segura.</p>
+            
+            <div class="hero-desc">
+                <p>O <strong>Fala Comigo</strong> é a solução ideal para quem visita Capitólio - MG. Pensado para facilitar o dia a dia no turismo, nosso aplicativo reúne o que há de melhor na região.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre o Aplicativo</h2>
+            <div class="content-box">
+                <p>O <strong>Fala Comigo</strong> é um aplicativo para facilitar a experiência de turistas que visitam Capitólio – MG, reunindo em um único ambiente digital as principais informações sobre o turismo da cidade.
+<br><br>
+	A plataforma concentra dados atualizados sobre eventos locais, pousadas e hospedagens, passeios turísticos, atrações naturais e serviços essenciais, permitindo que o visitante encontre rapidamente tudo o que precisa durante a sua estadia. Com isso, o turista economiza tempo, evita desencontros de informação e aproveita melhor cada momento da viagem.
+<br><br>
+	Pensado para ser simples, intuitivo e acessível, o Fala Comigo funciona como um guia turístico digital, oferecendo uma navegação prática e organizada, ideal tanto para quem está planejando a viagem quanto para quem já está na cidade.
+<br><br>
+	O aplicativo foi criado para conectar turistas às experiências mais relevantes de Capitólio, promovendo o turismo local e facilitando o acesso a informações confiáveis, sempre disponíveis na palma da mão.
+<br><br>
+	Com o Fala Comigo, explorar Capitólio se torna mais fácil, seguro e completo, permitindo que cada visitante viva a cidade de forma organizada, informada e sem complicações..</p>
+                
+                <div class="features-list">
+                    <div class="feature-item">
+                        <strong>📍 Tudo sobre Capitólio</strong>
+						<p>Descubra onde ficar, o que fazer e quais eventos estão acontecendo na cidade, tudo em um único aplicativo.</p>
+                    </div>
+                    <div class="feature-item">
+                        <strong>🚀 Acessibilidade</strong>
+                        <p>Interface projetada para ser clara e fácil de usar por qualquer pessoa.</p>
+                    </div>
+                    <div class="feature-item">
+                        <strong>🔒 Segurança</strong>
+                        <p>Seus dados protegidos com padrões modernos de privacidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato & Informações Legais -->
+    <section id="contato" class="contact-highlight">
+        <div class="container">
+            <h2>Contato e Suporte</h2>
+            
+            <div class="contact-box">
+                <!-- Ícone simulado com caractere -->
+                <span class="icon-orange">✉</span>
+                
+                <p class="contact-text">
+                    Estamos aqui para ouvir você. Se tiver dúvidas, sugestões ou precisar de suporte técnico, não hesite em nos contatar.
+                </p>
+                <br>
+                <p class="contact-text">Envie um e-mail diretamente para:</p>
+                <h3 style="color: #333; margin: 10px 0;">falacomigopublicidade@gmail.com</h3>
+                
+                <a href="mailto:falacomigopublicidade@gmail.com" class="btn-contact">Entrar em Contato</a>
+
+                <div style="margin-top: 30px; font-size: 0.9rem; border-top: 1px solid #ffe0cc; padding-top: 20px;">
+                    <p style="color: #888; margin-bottom: 5px;">Correspondência Física:</p>
+                    <p><strong>Fala Comigo Publicidade Capitólio</strong></p>
+                    <p>Capitólio - MG</p>
+                    <p>Brasil</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Política de Privacidade -->
+    <section id="privacidade">
+        <div class="container">
+            <h2>Política de Privacidade</h2>
+            <div class="content-box privacy-content">
+                <p><strong>Última atualização:</strong> 02 de Janeiro de 2026</p>
+                
+                <p>A sua privacidade é importante para nós. É política do <strong>Fala Comigo</strong> valorizar a privacidade de seus usuários e está comprometido com a proteção dos dados pessoais tratados por meio da plataforma. Esta Política de Privacidade descreve como as informações são coletadas, utilizadas, armazenadas e protegidas, em conformidade com as políticas do Google Play e a legislação aplicável.</p>
+
+                <h3>1. Coleta de Dados</h3>
+                <p>O Fala Comigo pode coletar os seguintes dados, conforme o uso do aplicativo:</p>
+                <ul>
+                    <li><strong>Dados fornecidos pelo usuário:</strong> Quando aplicável, como nome e e-mail (ex.: formulários de contato ou suporte).</li>
+                    <li><strong>Dados Técnicos:</strong> Como tipo de dispositivo, sistema operacional e identificadores básicos necessários para o funcionamento do app.</li>
+                    <li><strong>Dados de uso:</strong> Como páginas acessadas e interações dentro do aplicativo.</li>
+                </ul>
+
+                <h3>2. Finalidade do Uso dos Dados</h3>
+                <p>As informações coletadas são utilizadas para::</p>
+                <ul>
+                    <li>Permitir o funcionamento adequado do aplicativo;</li>
+					<li>Exibir conteúdos turísticos relevantes;</li>
+					<li>Melhorar a experiência do usuário;</li>
+                    <li>Prestar suporte e atendimento ao usuário;</li>
+                    <li>Garantir segurança e prevenção de usos indevidos;</li>
+                    <li>Cumprir obrigações legais e regulatórias.</li>
+                </ul>
+
+                <h3>3. Compartilhamento de Dados</h3>
+                <p>O Fala Comigo não vende, aluga ou comercializa dados pessoais.</p>
+				<br>
+				<p>Os dados poderão ser compartilhados apenas:</p>
+					<li>Quando exigido por lei ou ordem judicial;</li>
+					<li>Com provedores de serviços essenciais ao funcionamento do aplicativo (ex.: hospedagem e infraestrutura);</li>
+					<li>Mediante consentimento explícito do usuário, quando aplicável.</li>
+					
+                <h3>4. Armazenamento e segurança</h3>
+                <p>Adotamos medidas técnicas e organizacionais adequadas para proteger os dados pessoais contra acesso não autorizado, perda, alteração ou divulgação indevida.</p>
+				<p>As informações são armazenadas em ambientes seguros e mantidas apenas pelo tempo necessário para cumprir as finalidades descritas nesta política.</p>
+
+                <h3>5. Direitos dos Usuários e Exclusão de Dados</h3>
+                <p>O usuário tem o direito de solicitar o acesso, correção ou exclusão de seus dados pessoais a qualquer momento.</p>
+                <p><strong>Como solicitar a exclusão de dados:</strong><br>
+				Envie um e-mail para <strong style="color: var(--primary-orange);">falacomigopublicidade@gmail.com</strong> com o assunto "Solicitação de Exclusão de Dados". Sua conta será desativada e seus dados removidos permanentemente de nossos sistemas ativos em até 30 dias.</p>
+				
+				<h3>6. Privacidade de Menores</h3>
+                <p>O Fala Comigo não coleta intencionalmente dados de crianças menores de 13 anos. Caso identifiquemos tal ocorrência, os dados serão removidos imediatamente.</p>
+
+                <h3>7. Contato sobre Privacidade</h3>
+                <p>Para questões específicas sobre esta política, entre em contato através do e-mail: falacomigopublicidade@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Fala Comigo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>	
